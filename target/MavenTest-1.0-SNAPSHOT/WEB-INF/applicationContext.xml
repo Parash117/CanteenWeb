@@ -30,6 +30,9 @@ http://www.springframework.org/schema/mvc http://www.springframework.org/schema/
             <list>
                 <value>com.codepoets.entity.Admin</value>
                 <value>com.codepoets.entity.Staff</value>
+                <value>com.codepoets.entity.Course</value>
+                <value>com.codepoets.entity.Student</value>
+                <value>com.codepoets.entity.Food</value>
             </list>
         </property>
         <property name="hibernateProperties">
