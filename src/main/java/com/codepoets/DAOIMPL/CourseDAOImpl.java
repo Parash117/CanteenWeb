@@ -11,16 +11,18 @@ import com.codepoets.entity.Staff;
 import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author Parash Gurung
  */
+@Repository
 public class CourseDAOImpl implements CourseDAO {
 
     private SessionFactory sessionFactory;
-
-    public void setSessionFactory(SessionFactory sessionFactory) {
+    
+    public void setSessionFactory(SessionFactory sessionFactory){
         this.sessionFactory = sessionFactory;
     }
 

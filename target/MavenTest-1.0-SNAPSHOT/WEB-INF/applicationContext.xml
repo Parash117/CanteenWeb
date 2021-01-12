@@ -57,7 +57,21 @@ http://www.springframework.org/schema/mvc http://www.springframework.org/schema/
     </bean>
     <bean id="staffService" class="com.codepoets.ServiceImpl.StaffServiceImpl" >
         <property name="staffDAO" ref="staffDAO" />
-    </bean>    
+    </bean>
+    
+    <bean id="studentDAO" class="com.codepoets.DAOIMPL.StudentDAOImpl" >
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+    </bean>
+    <bean id="studentService" class="com.codepoets.ServiceImpl.StudentServiceImpl" >
+        <property name="studentDAO" ref="studentDAO" />
+    </bean>
+    
+    <bean id="courseDAO" class="com.codepoets.DAOIMPL.CourseDAOImpl" >
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+    </bean>
+    <bean id="courseService" class="com.codepoets.ServiceImpl.CourseServiceImpl" >
+        <property name="courseDAO" ref="courseDAO" />
+    </bean>        
     
     
     <tx:annotation-driven transaction-manager="transactionManager"/>

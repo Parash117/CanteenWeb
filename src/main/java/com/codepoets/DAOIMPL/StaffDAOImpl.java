@@ -69,7 +69,6 @@ public class StaffDAOImpl implements StaffDAO {
         //Staff staff = new Staff();
         Session session = sessionFactory.getCurrentSession();
         session.update(staff);
-        
     }
     
 }
